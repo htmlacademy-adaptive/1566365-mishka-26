@@ -9,11 +9,11 @@
 <body>
 
   <header class="header">
-    <nav class="header__nav nav ">
+    <nav class="header__nav nav">
       <button class="nav__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <a class="nav__logo">
+      <a class="nav__logo" href="index.html">
         <img src="img/sprite/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
       </a>
       <div class="nav__list-container container">
@@ -22,7 +22,7 @@
             <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--current">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="nav__list nav__list--user list-reset">
@@ -54,29 +54,15 @@
         </div>
       </div>
     </nav>
-    <section class="first-screen first-screen--home">
-      <h1 class="visually-hidden">Магазин вязаных изделий Mishka</h1>
+    <section class="first-screen first-screen--catalog">
+      <h1 class="visual-hidden">Магазин вязаных изделий Mishka</h1>
       <div class="first-screen__container container">
-        <h2 class="first-screen__title title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
-        <div class="first-screen__buttons">
-          <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">
-            <span>Предметы интерьера</span>
-            <img src="img/sprite/icon-interior.svg" width="40" height="62" alt="Предметы интерьера.">
-          </a>
-          <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">
-            <span>Детские игрушки</span>
-            <img src="img/sprite/icon-toys.svg" width="60" height="60" alt="Детские игрушки.">
-          </a>
-        </div>
+        <h2 class="first-screen__title title">Вязание на заказ</h2>
       </div>
     </section>
   </header>
 
   <main class="main">
-    <section class="main__section">
-      <h2 class="main__title">Вязаные корзинки</h2>
-    </section>
-
     <section class="form">
       <div class="container">
         <h2 class="visually-hidden">Форма заявки на вязание</h2>
@@ -93,13 +79,13 @@
             </h2>
             <div class="form__input-wrapper">
               <label class="form__label">
-                <input class="visually-hidden form__input-control form__input--radio" type="radio" name="type"
+                <input class="visually-hidden form__input-control form__input-radio" type="radio" name="type"
                   value="interior" checked>
                 <span class="form__label-control form__label-control--radio"></span>
                 <span class="form__label-text">Аксессуар для интерьера</span>
               </label>
               <label class="form__label">
-                <input class="visually-hidden form__input-control form__input--radio" type="radio" name="type"
+                <input class="visually-hidden form__input-control form__input-radio" type="radio" name="type"
                   value="toy">
                 <span class="form__label-control form__label-control--radio"></span>
                 <span class="form__label-text">Детская игрушка</span>
@@ -115,34 +101,34 @@
             </h2>
             <div class="form__input-wrapper">
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="white"
+                <input class="visually-hidden form__input-control form__input-checkbox" type="checkbox" name="white"
                   checked>
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Белый</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="grey"
+                <input class="visually-hidden form__input-control form__input-checkbox" type="checkbox" name="grey"
                   checked>
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Серый</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="tiffany">
+                <input class="visually-hidden form__input-control form__input-checkbox" type="checkbox" name="tiffany">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Тиффани</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="black">
+                <input class="visually-hidden form__input-control form__input-checkbox" type="checkbox" name="black">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Черный</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="pink">
+                <input class="visually-hidden form__input-control form__input-checkbox" type="checkbox" name="pink">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Розовый</span>
               </label>
               <label class="form__label form__label--check">
-                <input class="visually-hidden form__input-control form__input--checkbox" type="checkbox" name="orange">
+                <input class="visually-hidden form__input-control form__input-checkbox" type="checkbox" name="orange">
                 <span class="form__label-control form__label-control--check"></span>
                 <span class="form__label-text">Оранжевый</span>
               </label>
@@ -188,7 +174,7 @@
             </h2>
             <label class="form__label-contacts form__label-contacts--mail">
               <span class="visually-hidden">Введите email</span>
-              <input class="form__input" for="form-mail" type="email" placeholder="Ваш Email*">
+              <input class="form__input" id="form-mail" type="email" placeholder="Ваш Email*">
             </label>
           </div>
         </fieldset>
@@ -214,8 +200,8 @@
 
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" href="#">
-        <img src="img/logo-footer.svg" alt="Логотип Магазин Мишка">
+      <a class="footer__logo" href="index.html">
+        <img src="img/logo-footer.svg" alt="Логотип Магазин Мишка" width="86" height="35">
       </a>
       <ul class="social list-reset">
         <li class="social__item">
