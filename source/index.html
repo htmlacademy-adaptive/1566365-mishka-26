@@ -9,85 +9,65 @@
 <body>
 
   <header class="header">
-    <div class="header__top-menu">
-      <div class="top-menu__logo">
-        <a class="top-menu-logo" href="#">
-          <img class="logo__mobile" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
-          <img class="logo__tablet" src="img/mishka-logo-tablet.svg" alt="Магазин Мишка">
-          <img class="logo__desktop" src="img/mishka-logo-desktop.svg" alt="Магазин Мишка">
-        </a>
-      </div>
-      <nav class="top-menu-nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="top-menu__wrapper header__wrapper">
-          <ul class="site-list">
-            <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="top-menu__user">
-          <ul class="user-list">
-            <li class="user-list__search">
-              <a class="top-menu__search-link" href="#">
-                <svg class="search-link-icon" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
-                Поиск
-              </a>
-            </li>
-            <li class="user-list__cart">
-              <a class="top-menu__cart-link" href="#">
-                <svg class="cart-link-icon" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
-                Корзина
-              </a>
-              <p>Корзина: пока пуста</p>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <div class="main-header">
-      <div class="main-header__wrapper">
-        <ul class="site-list">
-          <li class="site-list__item">
-            <a href="#">Новые поступления</a>
+    <nav class="header__nav nav ">
+      <button class="nav__toggle">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <a class="nav__logo">
+        <img src="img/sprite/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
+      </a>
+      <div class="nav__list-container container">
+        <ul class="nav__list nav__list--catalog list-reset">
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Распродажа</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-      </div>
-      <p>Бесплатная доставка по России</p>
-    </div>
-    <h1 class="visual-hidden">Магазин изделий ручной работы</h1>
-    <section class="header-promo">
-      <h2 class="header-promo__title">Милые штуки ручной работы для дома</h2>
-      <div class="header-promo__container">
-        <ul class="container__list">
-          <li class="container__item--interior">
-            <a class="interior__link" href="#">
-              <span class="interior__text">Предметы интерьера</span>
-              <svg class="interior-icon" width="41" height="62">
-                <use xlink:href="img/sprite.svg#interior"></use>
-              </svg>
+        <ul class="nav__list nav__list--user list-reset">
+          <li class="nav__item">
+            <a class="nav__link nav__link--search" href="#">
+              <img src="img/sprite/icon-search.svg" width="18" height="18" alt="Поиск">
+              <span>Поиск по сайту</span>
             </a>
           </li>
-          <li class="container__item--toy">
-            <a class="toy__link" href="#">
-              <span class="toy__text">Детские игрушки</span>
-              <svg class="toy-icon" width="61" height="61">
-                <use xlink:href="img/sprite.svg#toy"></use>
-              </svg>
-
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <img src="img/sprite/icon-cart.svg" width="21" height="18" alt="Корзина">
+              <span>Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
+      </div>
+      <div class="nav__sale-container">
+        <div class="nav__sale-wrapper">
+          <ul class="nav__list nav__list--sale list-reset">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="nav__sale-text">Бесплатная доставка по России</p>
+        </div>
+      </div>
+    </nav>
+    <section class="first-screen first-screen--home">
+      <h1 class="visually-hidden">Магазин вязаных изделий Mishka</h1>
+      <div class="first-screen__container container">
+        <h2 class="first-screen__title title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
+        <div class="first-screen__buttons">
+          <a class="first-screen__buttons-item first-screen__buttons-item--interior" href="#">
+            <span>Предметы интерьера</span>
+            <img src="img/sprite/icon-interior.svg" width="40" height="62" alt="Предметы интерьера.">
+          </a>
+          <a class="first-screen__buttons-item first-screen__buttons-item--toys" href="#">
+            <span>Детские игрушки</span>
+            <img src="img/sprite/icon-toys.svg" width="60" height="60" alt="Детские игрушки.">
+          </a>
+        </div>
       </div>
     </section>
   </header>
@@ -95,173 +75,155 @@
   <main class="main">
 
     <section class="best-product">
-      <div class="best-product__conteiner">
-        <h2 class="best-product__title">Вязаные корзинки</h2>
-        <span class="best-product__subtitle">Товар недели</span>
+      <div class="best-product__container container">
+        <div class="best-product__title-container">
+          <h2 class="best-product__title title title--mini">Вязаные корзинки</h2>
+          <span class="best-product__type">Товар недели</span>
+        </div>
+        <div class="best-product__description">
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+          <dl class="best-product__list list-reset">
+            <dt class="best-product__item">Цвет:</dt>
+            <dd class="best-product__item">тиффани/серый</dd>
+            <dt class="best-product__item">Диаметр:</dt>
+            <dd class="best-product__item">25 см</dd>
+            <dt class="best-product__item">Высота:</dt>
+            <dd class="best-product__item">15 см</dd>
+          </dl>
+        </div>
+        <div class="best-product__price-container">
+          <p class="best-product__price">Цена: 990 руб.</p>
+          <button class="button best-product__button" type="button">Заказать</button>
+        </div>
+        <div class="best-product__image">
+          <img src="img/best-product-mobile.jpg" width="260" height="315" alt="Вязаные корзинки.">
+        </div>
       </div>
-      <div class="best-product__description">
-        <p class="best-product__paragraph">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
-          размерах.</p>
-        <table class="best-product__table">
-          <tr class="best-product__row">
-            <td>Цвет:</td>
-            <td>тиффани/серый</td>
-          </tr>
-          <tr class="best-product__row">
-            <td>Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr class="best-product__row">
-            <td>Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-      </div>
-      <p class="best-product__text">Цена: 990 руб.</p>
-      <a class="button" href="#">Заказать</a>
     </section>
 
-    <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас:</h2>
-      <div class="about-us__container">
-        <ul class="about-us__list">
-          <li class="about-us__item">
-            <svg class="about-us__icon--flower" width="33" height="38">
-              <use xlink:href="img/sprite.svg#icon-flower"></use>
-            </svg>
-            <p>Экологически чистые материалы</p>
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__icon--flower" width="35" height="34">
-              <use xlink:href="img/sprite.svg#icon-flower"></use>
-            </svg>
-            <p>Связано вручную с любовью и умилением</p>
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__icon--money" width="47" height="27">
-              <use xlink:href="img/sprite.svg#icon-money"></use>
-            </svg>
-            <p>Скандинавский стиль по российской цене</p>
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__icon--rocket" width="55" height="23">
-              <use xlink:href="img/sprite.svg#icon-rocket"></use>
-            </svg>
-            <p>Поддержка отечественного производителя</p>
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__icon--heart" width="34" height="27">
-              <use xlink:href="img/sprite.svg#icon-heart"></use>
-            </svg>
-            <p>Увеличивает лайки на фотографиях</p>
-          </li>
-          <li class="about-us__item">
-            <svg class="about-us__icon--gift" width="33" height="32">
-              <use xlink:href="img/sprite.svg#icon-gift"></use>
-            </svg>
-            <p>Поставляется в подарочной упаковке</p>
-          </li>
+    <section class="about">
+      <div class="about__container container">
+        <h2 class="about__title title title--mini">Коротко о нас:</h2>
+        <ul class="about__list list-reset">
+          <li class="about__item about__item--ecolog">Экологически чистые&nbsp;материалы</li>
+          <li class="about__item about__item--rusprice">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="about__item about__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="about__item about__item--handmade">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением</li>
+          <li class="about__item about__item--support">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--gift">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
         </ul>
       </div>
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова <br> @misssssiskras</cite>
+      <div class="reviews__wrapper container">
+        <h2 class="reviews__title title title--mini">Отзывы</h2>
+        <ol class="reviews__list list-reset">
+          <li class="reviews__item reviews__item--active">
+            <p class="reviews__desc">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__author">
+              <h3 class="reviews__name">Анастасия Красильникова</h3>
+              <p class="reviews__inst">@misssssiskras</p>
             </div>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Екатерина Красильникова <br> @misssssiskras2</cite>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__desc">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+              количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
+              мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__author">
+              <h3 class="reviews__name">Екатерина Красильникова</h3>
+              <p class="reviews__inst">@misssssiskras2</p>
             </div>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
-                такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
-                Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Елена Красильникова <br> @misssssiskras3</cite>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__desc">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+              такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
+              Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__author">
+              <h3 class="reviews__name">Елена Красильникова</h3>
+              <p class="reviews__inst">@misssssiskras3</p>
             </div>
-          </blockquote>
+          </li>
+        </ol>
+        <div class="reviews__control">
+          <button class="reviews__control-arrow reviews__control-arrow--prev" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="reviews__control-arrow reviews__control-arrow--next" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
-        </p>
+        <a class="reviews__button button" href="#">Написать</a>
       </div>
     </section>
 
-    <section class="contact">
-      <svg class="contact__icon--flag" width="47" height="81">
-        <use xlink:href="img/sprite.svg#icon-flag"></use>
-      </svg>
-      <h2 class="contact__title">Контакты</h2>
-      <div class="contact__inner">
-        <ul class="contact__description">
-          <li class="contact__item">
-            <span class="contact__name">e-mail:</span>
-            <a href="mailto:info@mimimishkashop.ru" class="link contact__link link--mail">info@mimimishkashop.ru</a>
-          </li>
-          <li class="contact__item">
-            <span class="contact__name">адрес:</span>
-            <p class="contact__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101 </p>
-          </li>
-        </ul>
+    <section class="contacts">
+      <div class="contacts__wrapper container">
+        <div class="contacts__text">
+          <h2 class="contacts__title title title--mini">Контакты</h2>
+          <dl class="contacts__list">
+            <dt class="contacts__item">e-mail:</dt>
+            <dd class="contacts__item">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </dd>
+            <dt class="contacts__item">адрес:</dt>
+            <dd class="contacts__item">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис&nbsp;101</dd>
+          </dl>
+        </div>
+        <a class="contacts__button button" href="#">Напишите нам</a>
+        <div class="contacts__map">
+          <iframe></iframe>
+          <div class="contacts__map-image">
+            <img src="img/map-mobile.jpg" width="320" height="454" alt="Вязаные корзинки.">
+          </div>
+        </div>
       </div>
-      <a class="button" href="#">Напишите нам</a>
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <a class="footer__logo" href="#">
         <img src="img/logo-footer.svg" alt="Логотип Магазин Мишка">
       </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Мы в Контакте</span>
-            <svg class="about-us__icon--rocket" width="28" height="22">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+      <ul class="social list-reset">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg width="28" height="22" role="img" aria-label="Мы в контакте.">
+              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
             </svg>
+            <span class="visually-hidden">Мы в контакте</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Мы на YouTube</span>
-            <svg class="about-us__icon--rocket" width="28" height="22">
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="28" height="22" role="img" aria-label="Мы на YouTube.">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
+            <span class="visually-hidden">Мы на YouTube</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Мы в Телеграм</span>
-            <svg class="about-us__icon--rocket" width="28" height="22">
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg width="28" height="22" role="img" aria-label="Мы в Телеграм.">
               <use xlink:href="img/sprite.svg#icon-telegram"></use>
             </svg>
+            <span class="visually-hidden">Мы в Телеграм</span>
           </a>
         </li>
       </ul>
-      <p class="footer-copyright">
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/">
-          <span class="footer-copyright__text">Разработано</span>
-          <svg class="htmlacademy-logo" width="27" height="34">
-            <use xlink:href="img/svg/sprite.svg#htmlacademy" />
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy.">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
+          <span class="visually-hidden">Html Academy</span>
         </a>
-      </p>
+      </div>
     </div>
   </footer>
 
