@@ -1,0 +1,28 @@
+.products {
+  padding: 30px;
+  margin: 0;
+}
+
+.products__container {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.video__container {
+  width: auto;
+  margin: 0 auto;
+  padding: 30px 30px 58px 30px;
+  display: flex;
+  flex-direction: column;
+}

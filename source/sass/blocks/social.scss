@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0;
+  width: 141px;
+}
+
+.footer__copyright {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

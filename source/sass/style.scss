@@ -1,3 +1,18 @@
-body {
-  background: #555555;
-}
+@import "./blocks/header.scss";
+@import "./blocks/main.scss";
+@import "./blocks/about.scss";
+@import "./blocks/best-product.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/first-screen.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/social.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/form.scss";
+
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/mixins.scss";
+@import "./global/utils.scss";
+@import "./global/veriables.scss";
