@@ -13,13 +13,10 @@ body {
 
 body {
   display: grid;
-  min-width: 320px;
-
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #444444;
-
   grid-template-rows: auto 1fr auto;
 }
 
@@ -49,35 +46,15 @@ img {
   }
 }
 
-.button {
-  display: block;
-  width: 100%;
-  padding: 14px 20px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
-  color: #444444;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: #ffffff;
-  border: 2px solid #444444;
-  cursor: pointer;
-
-  @media (min-width: 768px) {
-    padding: 15px 20px 13px;
-
-    font-size: 17px;
-  }
-}
-
 .container {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media (min-width: 768px) {
+    padding: 0 50px;
+  }
 }
 
 .list-reset {

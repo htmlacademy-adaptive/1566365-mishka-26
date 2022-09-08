@@ -2,49 +2,25 @@
 .contacts__wrapper {
   width: auto;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .contacts__text {
-  width: auto;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  padding-top: 38px;
 }
 
 .contacts__list {
   width: auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .contacts__item {
-  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-
-  display: flex;
-  align-items: center;
-
-  color: #444444;
-}
-
-.contacts__button {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-
   color: #444444;
 }
 

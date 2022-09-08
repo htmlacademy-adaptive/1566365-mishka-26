@@ -1,0 +1,32 @@
+.first-screen {
+  background-color: beige;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.first-screen--home {
+  position: relative;
+
+  background-image: url("../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top -17px;
+  }
+
+  .first-screen__buttons-item {
+  position: relative;
+
+  display: block;
+  padding: 24px 115px 31px 30px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #63d1bb;
+}
+
+.first-screen__buttons-item:nth-child(2n) {
+  background-color: #56c3b2;
+}

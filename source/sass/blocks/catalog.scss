@@ -1,21 +1,12 @@
-.products {
-  padding: 30px;
-  margin: 0;
+.first-screen {
+  background: #F1F1F1;
+  position: relative;
 }
 
-.products__container {
-  padding: 0 30px;
+.first-screen__container {
+  min-height: 177px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.products__list {
-  display: flex;
-  flex-direction: column;
-}
-
-.video__container {
-  padding: 30px 30px 58px 30px;
-  display: flex;
-  flex-direction: column;
-}
