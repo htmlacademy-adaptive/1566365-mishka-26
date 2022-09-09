@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "./global/mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/utils.scss";
+@import "./global/veriables.scss";
+
+@import "./blocks/botton.scss";
+@import "./blocks/header.scss";
+@import "./blocks/main.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/best-product.scss";
+@import "./blocks/first-screen.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/social.scss";
+@import "./blocks/about.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/video.scss";
+@import "./blocks/form.scss";
+
+

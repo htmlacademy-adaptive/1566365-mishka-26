@@ -1,0 +1,28 @@
+
+
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about__list {
+  padding-top: 82px;
+}
+
+.about__item {
+  margin-bottom: 28px;
+  padding-top: 55px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  background-repeat: no-repeat;
+
+  &--ecolog {
+    background-image: url("../img/svg/icon-ecolog.svg");
+    background-position: top left 8px;
+  }
+}

@@ -1,0 +1,30 @@
+
+.contacts__wrapper {
+  width: auto;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__text {
+  padding-top: 38px;
+}
+
+.contacts__list {
+  width: auto;
+  display: grid;
+}
+
+.contacts__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__map-image iframe {
+  border: none;
+  display: block;
+}
