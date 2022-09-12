@@ -1,20 +1,28 @@
 
+.contacts {
+  padding-top: 131px;
+}
+
 .contacts__wrapper {
-  width: auto;
-  margin: 0 auto;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
 }
 
 .contacts__text {
-  padding-top: 38px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30px ;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__list {
   width: auto;
   display: grid;
+  align-content: start;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
+/* вообще гриды не понимаю если честно. пробовал всяко, но ничего не выходит. завтра снова буду пробовать*/
 
 .contacts__item {
   font-style: normal;
