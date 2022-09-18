@@ -7,11 +7,11 @@
   @media (min-width: 768px) {
     padding: 0;
 
-    background-color: beige;
+    background-color: #F9F9F9;
   }
 
   @media (min-width: 1150px) {
-    background-color: #ffffff;
+    background-color: #F9F9F9;
   }
 }
 
@@ -32,7 +32,7 @@
 
     display: grid;
 
-    background-color: beige;
+    background-color: #F9F9F9;
 
     gap: 20px 0;
     grid-template-columns: repeat(2, 1fr);
@@ -40,8 +40,6 @@
 
   @media (min-width: 1150px) {
     padding: 0 15px;
-
-    background-color: #ffffff;
 
     gap: 0 150px;
   }
@@ -251,9 +249,11 @@
   height: 20px;
   padding: 0;
 
-  background-color: blue;
+  background-color: #000000;
   border: none;
   cursor: pointer;
+
+  background: url("/img/sprite/menu-open.svg") no-repeat center;
 
   @media (min-width: 768px) {
     display: none;
@@ -297,3 +297,22 @@
   display: block;
 }
 
+/*
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.nav--closed .nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+*/

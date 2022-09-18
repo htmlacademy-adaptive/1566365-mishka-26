@@ -7,22 +7,95 @@
 }
 
 .about__list {
-  padding-top: 82px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 58px;
+  list-style: none;
+
+
+  @media (min-width: 786px) {
+    .about__list {
+      display: grid;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    .about__list {
+      max-width: 700px
+    }
+  }
 }
 
 .about__item {
-  margin-bottom: 28px;
-  padding-top: 55px;
+  position: relative;
+  flex-basis: auto;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 83px;
 
+  @media (min-width: 768px) {
+    .about__item {
+      flex-basis: auto;
+      width: 50%;
+      margin-bottom: 111px;
+      flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    .about__item {
+      flex-basis: auto;
+      width: 50%;
+      margin-bottom: 111px;
+      flex-basis: 50%;
+    }
+  }
+}
+
+.about__text {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+  font-style: normal;
 
-  background-repeat: no-repeat;
+}
 
-  &--ecolog {
-    background-image: url("../img/svg/icon-ecolog.svg");
-    background-position: top left 8px;
-  }
+.about__container {
+  background: #ffffff;
+  max-width: 1150px;
+  width: auto;
+  padding: 0 30px;
+}
+
+.about__item--ecolog {
+  background: url(../../img/sprite/icon-flower.svg) no-repeat ;
+  background-position: top 45px left;
+}
+
+.about__item--rusprice {
+  background: url(../../img/sprite/icon-money.svg) no-repeat;
+  background-position: top 45px left;
+}
+
+.about__item--like {
+  background: url(../../img/sprite/icon-heart.svg) no-repeat;
+  background-position: top 45px left;
+}
+
+.about__item--handmade {
+  background: url(../../img/sprite/icon-tangle.svg) no-repeat;
+  background-position: top 45px left;
+}
+
+.about__item--support {
+  background: url(../../img/sprite/icon-rocket.svg) no-repeat;
+  background-position: top 45px left;
+}
+
+.about__item--gift {
+  background: url(../../img/sprite/icon-gift.svg) no-repeat;
+  background-position: top 45px left;
 }

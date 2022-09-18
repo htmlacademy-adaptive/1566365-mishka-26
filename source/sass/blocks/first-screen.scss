@@ -1,17 +1,28 @@
 .first-screen {
-  background-color: beige;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background: #F1F1F1;
+  position: relative;
 }
+
 
 .first-screen--home {
   position: relative;
 
-  background-image: url("../img/hero-mobile.png");
+  background-image: url("/img/header-img.jpg");
   background-repeat: no-repeat;
-  background-position: center top -17px;
+  background-position: center top;
+  background-size: 569px 373px;
+
+  @media (min-width: 768px) {
+    background-image: url("/img/header-desktop.jpg");
+    background-position: center bottom 11px;
   }
 
+  @media (min-width: 1150px) {
+    background-image: url("/img/header-desktop.jpg");
+  }
+}
+
+/*
   .first-screen__buttons-item {
   position: relative;
 
@@ -29,4 +40,29 @@
 
 .first-screen__buttons-item:nth-child(2n) {
   background-color: #56c3b2;
+}
+*/
+
+
+.button--toy {
+  background-color: #63D1BB;
+}
+
+.button--interior {
+  background-color: #56C3B2;
+}
+
+.first-screen__container {
+  padding-top: 70px;
+  padding-bottom: 150px;
+}
+
+.first-screen__title {
+  align-items: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+
 }

@@ -1,9 +1,11 @@
+@import "./global/veriables.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/utils.scss";
-@import "./global/veriables.scss";
 
+@import "./blocks/title.scss";
+@import "./blocks/container.scss";
 @import "./blocks/botton.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main.scss";
@@ -19,5 +21,4 @@
 @import "./blocks/product.scss";
 @import "./blocks/video.scss";
 @import "./blocks/form.scss";
-
-
+@import "./blocks/promo-things.scss"
