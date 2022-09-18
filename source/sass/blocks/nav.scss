@@ -249,9 +249,11 @@
   height: 20px;
   padding: 0;
 
-  background-color: blue;
+  background-color: #000000;
   border: none;
   cursor: pointer;
+
+  background: url("/img/sprite/menu-open.svg") no-repeat center;
 
   @media (min-width: 768px) {
     display: none;
@@ -295,6 +297,7 @@
   display: block;
 }
 
+/*
 .nav--closed .nav__toggle::before {
   content: "";
   position: absolute;
@@ -312,3 +315,4 @@
     0 8px 0 0 fade(#ffffff, 30%),
     0 16px 0 0 fade(#ffffff, 30%);
 }
+*/

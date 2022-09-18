@@ -1,6 +1,7 @@
 .promo-things__bottom {
   display: flex;
   flex-direction: column;
+  top: 55px;
 }
 
 @media (min-width: 768px) {
@@ -35,4 +36,29 @@
     flex-basis: auto;
     width: 100%;
   }
+}
+
+.button__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 8px 26px 14px 20px;
+}
+
+
+.button__inner span {
+  width: 130px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-transform: none;
+  white-space: pre-line;
+  text-align: left;
+}
+
+.button--primary {
+  border: none;
 }

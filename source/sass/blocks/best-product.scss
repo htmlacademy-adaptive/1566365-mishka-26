@@ -43,6 +43,9 @@
 }
 
 .best-product__title {
+  font-size: 25px;
+  line-height: 30px;
+
   @media (min-width: 1150px) {
     position: relative;
     z-index: 1;
@@ -182,4 +185,16 @@
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.best-product::after {
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/sprite/zigzag-line-desktop.svg);
+  background-repeat: repeat-x;
+  background-size: 319px 100%;
+  transform: rotate(180deg);
 }

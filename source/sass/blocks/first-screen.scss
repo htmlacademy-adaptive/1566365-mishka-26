@@ -9,7 +9,8 @@
 
   background-image: url("/img/header-img.jpg");
   background-repeat: no-repeat;
-  background-position: center top -17px;
+  background-position: center top;
+  background-size: 569px 373px;
 
   @media (min-width: 768px) {
     background-image: url("/img/header-desktop.jpg");
@@ -53,6 +54,15 @@
 
 .first-screen__container {
   padding-top: 70px;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 
+.first-screen__title {
+  align-items: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+
+}

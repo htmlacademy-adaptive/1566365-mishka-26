@@ -17,8 +17,7 @@
 
   @media (min-width: 786px) {
     .about__list {
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: grid;
     }
   }
 
