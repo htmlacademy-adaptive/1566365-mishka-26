@@ -1,0 +1,44 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $font-family;
+  text-align: center;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 20px 13px;
+
+    font-size: 17px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: #ffffff;
+
+      background-color: #444444;
+      outline: none;
+    }
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}
