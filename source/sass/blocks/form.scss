@@ -466,8 +466,7 @@
     width: 25px;
     height: 24px;
 
-    -webkit-mask-image: url("../img/svg/icon-phone.svg");
-            mask-image: url("../img/svg/icon-phone.svg");
+    mask-image: url("../img/svg/icon-phone.svg");
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width-1) {
       right: 27px;
@@ -482,8 +481,7 @@
     width: 32px;
     height: 21px;
 
-    -webkit-mask-image: url("../img/svg/icon-mail.svg");
-            mask-image: url("../img/svg/icon-mail.svg");
+    mask-image: url("../img/svg/icon-mail.svg");
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width-1) {
       right: 22px;
