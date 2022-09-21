@@ -1,14 +1,14 @@
 .footer {
   background-color: #f1f1f1;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 51px;
     padding-bottom: 57px;
   }
 }
 
-.footer__container {
-  @media (min-width: 768px) {
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
     display: grid;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@
 
   color: #000000;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

@@ -1,8 +1,7 @@
-
 .contacts {
   padding: 38px 0 39px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 71px 0 57px;
 
     background-image: url("../img/svg/icon-flag.svg");
@@ -10,23 +9,23 @@
     background-position: top 48px right 53px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     padding: 72px 0 105px;
 
     background: none;
   }
 }
 
-.contacts__wrapper {
+.contacts__container {
   display: grid;
   padding: 0;
 
   grid-template-columns: 1fr;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     padding: 0 50px 0;
 
     gap: 76px 35px;
@@ -37,11 +36,11 @@
 .contacts__text {
   padding: 0 30px 55px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0 50px 41px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     padding: 80px 0 0 174px;
 
     background-image: url("../img/svg/icon-flag.svg");
@@ -58,7 +57,7 @@
   gap: 15px 17px;
   grid-template-columns: 60px 1fr;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 42px;
 
     column-gap: 25px;
@@ -66,7 +65,7 @@
     grid-template-columns: repeat(4, auto);
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     padding-top: 29px;
 
     gap: 16px 25px;
@@ -81,7 +80,7 @@
   font-size: 14px;
   line-height: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
   }
 }
@@ -92,12 +91,11 @@
 
   border-bottom: 1px solid #62d1ba;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-right: 26px;
-    padding-bottom: 3px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding-bottom: 7px;
   }
@@ -122,11 +120,11 @@
   width: 260px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 230px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     margin-right: 84px;
   }
 }
@@ -136,11 +134,11 @@
   height: 454px;
   margin-bottom: 42px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     width: 527px;
     margin: 0;
 

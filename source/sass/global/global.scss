@@ -19,12 +19,12 @@ body {
 
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $font-family;
   color: #444444;
 
   grid-template-rows: auto 1fr auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
   }
