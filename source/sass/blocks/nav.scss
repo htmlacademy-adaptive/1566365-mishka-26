@@ -371,12 +371,6 @@
   }
 }
 
-.no-js .nav {
-  @media (max-width: $mobile-width-only) {
-    position: static;
-  }
-}
-
 .no-js .nav__toggle {
   @media (max-width: $mobile-width-only) {
     display: none;
