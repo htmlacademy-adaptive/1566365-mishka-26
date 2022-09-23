@@ -28,6 +28,19 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: #46c1ae;
+
+      outline: none;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__logo[href] {

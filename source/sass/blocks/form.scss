@@ -218,7 +218,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 24px 98px;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, 248px);
   }
 }
 
@@ -380,19 +380,6 @@
 
     opacity: 1;
   }
-
-  /* stylelint-disable */
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    margin: 0;
-
-    -webkit-appearance: none !important;
-  }
-
-  &[type="number"] {
-    -moz-appearance: textfield;
-  }
-  /* stylelint-enable */
 }
 
 .form__section--contacts {
